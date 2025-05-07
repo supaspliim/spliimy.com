@@ -1,21 +1,41 @@
-<button onclick="loadArtist('ken_carson')">Play Ken Carson</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spliimy – Artist Player</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; background-color: #111; color: white;">
 
-<!-- YouTube Embed -->
-<iframe 
-  id="youtube-frame" 
-  width="560" 
-  height="315" 
-  frameborder="0" 
-  allow="autoplay; encrypted-media" 
-  allowfullscreen>
-</iframe>
+  <h1>Spliimy</h1>
+  <button onclick="loadArtist('ken_carson')" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    Play Ken Carson
+  </button>
 
-<!-- Instagram Post Embed -->
-<iframe 
-  id="insta-frame" 
-  width="400" 
-  height="480" 
-  frameborder="0" 
-  scrolling="no" 
-  allowtransparency="true">
-</iframe>
+  <div style="margin-top: 30px;">
+    <iframe 
+      id="youtube-frame"
+      width="560" 
+      height="315" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen 
+      style="border-radius: 12px;">
+    </iframe>
+  </div>
+
+  <div style="margin-top: 40px;">
+    <iframe 
+      id="insta-frame"
+      width="400" 
+      height="480" 
+      frameborder="0" 
+      scrolling="no" 
+      allowtransparency="true"
+      style="border-radius: 12px;">
+    </iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
