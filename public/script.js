@@ -3,12 +3,12 @@ async function loadArtist(artistName) {
     const res = await fetch(`/artists/${artistName}/info.json`);
     const data = await res.json();
 
-    // Update YouTube embed
+    // Set YouTube video
     document.getElementById('youtube-frame').src = data.youtube + '?autoplay=1&mute=1';
 
-    // Update Instagram link
-    document.getElementById('instagram-link').href = data.instagram;
-    document.getElementById('instagram-link').innerText = `View ${data.name}'s Instagram`;
+    // Set Instagram post
+    document.getElementById('insta-frame').src = data.instagram_embed;
+
   } catch (err) {
     console.error('Failed to load artist:', err);
   }
